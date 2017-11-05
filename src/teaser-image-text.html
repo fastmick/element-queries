@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css element queries</title>
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/eqcss.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        p {
+            margin: 0;
+        }
+        
+        .wrapper {
+            background: #fff;
+            display: flex;
+        }
+        
+        .image-wrapper {
+            padding: 10px;
+        }
+        
+        @element .image-wrapper and (min-width: 400px) {
+            /* $this {
+                background: #f00;
+            } */
+            $this figure {
+                float: left;
+                margin-right: 20px;
+                width: 50%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="site">
+        <div class="wrapper">
+            <section class="image-wrapper">
+                <figure>
+                    <img src="images/stones-old.jpg" alt="">
+                </figure>
+                <p>
+                    Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten
+                    meines großen Bruders »Lorem Ipsum«, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden.
+                </p>
+            </section>
+
+
+
+        </div>
+        <!--// wrapper-->
+
+        <div class="wrapper">
+            <section class="image-wrapper">
+                <figure>
+                    <img src="images/stones-old.jpg" alt="">
+                </figure>
+                <p>
+                    Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten
+                    meines großen Bruders »Lorem Ipsum«, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden.
+                </p>
+            </section>
+
+            <section class="image-wrapper">
+                <figure>
+                    <img src="images/stones-old.jpg" alt="">
+                </figure>
+                <p>
+                    Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten
+                    meines großen Bruders »Lorem Ipsum«, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden.
+                </p>
+            </section>
+
+
+        </div>
+        <!--// wrapper-->
+    </div>
+
+    <script src="js/browser-detection.js"></script>
+    <script src="js/EQCSS.js"></script>
+
+</body>
+
+</html>
